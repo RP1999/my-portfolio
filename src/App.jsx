@@ -3,7 +3,12 @@ import './App.css';
 import ParticleBackground from './components/ParticleBackground';
 import ThemeToggle from './components/ThemeToggle';
 import LottieAnimation from './components/LottieAnimation';
+import SpaceTraveler from './components/SpaceTraveler';
 import { Github, Linkedin, Mail, Phone, MapPin, ChevronDown, ExternalLink, Code, Sparkles, Rocket, Zap, Star, Award, BookOpen } from 'lucide-react';
+import recipeImage from './assets/images/recipe-platform.png';
+import fruitImage from './assets/images/fruit-management.png';
+import appointmentImage from './assets/images/appointment-system.png';
+import taskImage from './assets/images/task-manager.png';
 
 export default function Portfolio() {
   const [scrolled, setScrolled] = useState(false);
@@ -55,7 +60,7 @@ export default function Portfolio() {
       github: "https://github.com/dilinaRandima/PAF-CP",
       color: "from-orange-500 to-red-500",
       icon: "🍳",
-      image: "/images/recipe-platform.png"
+      image: recipeImage
     },
     {
       title: "Fruit Management System",
@@ -65,7 +70,7 @@ export default function Portfolio() {
       github: "https://github.com/dilinaRandima/ITPM-Fruit-Management-System",
       color: "from-green-500 to-emerald-500",
       icon: "🍎",
-      image: "/images/fruit-management.png"
+      image: fruitImage
     },
     {
       title: "Appointment Management System",
@@ -75,7 +80,7 @@ export default function Portfolio() {
       github: "https://github.com/UdaraSu/ITP24_B8_09_Pet_Health_Care_Management_System/tree/Ranidu",
       color: "from-blue-500 to-cyan-500",
       icon: "📅",
-      image: "/images/appointment-system.png"
+      image: appointmentImage
     },
     {
       title: "Task Manager App",
@@ -85,7 +90,7 @@ export default function Portfolio() {
       github: "https://github.com/RP1999/Task-Manager",
       color: "from-purple-500 to-pink-500",
       icon: "✓",
-      image: "/images/task-manager.png"
+      image: taskImage
     }
   ];
 
@@ -127,6 +132,9 @@ export default function Portfolio() {
 
       {/* Background Particles */}
       <ParticleBackground />
+
+      {/* Space Traveler Feature */}
+      <SpaceTraveler />
 
       {/* Animated Background Grid */}
       <div className="fixed inset-0 z-0 opacity-20">
@@ -274,7 +282,7 @@ export default function Portfolio() {
       {/* About Section */}
       <section id="about" className="py-24 px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="scroll-animate bg-white dark:bg-black border-2 border-orange-500 rounded-3xl p-12 hover:border-orange-400 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/20 relative overflow-hidden group">
+          <div id="about-content" className="scroll-animate bg-white dark:bg-black border-2 border-orange-500 rounded-3xl p-12 hover:border-orange-400 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/20 relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl group-hover:bg-orange-500/10 transition-all duration-500 animate-pulse-slow"></div>
             <div className="relative z-10">
               <h2 className="text-5xl md:text-6xl font-black mb-8">

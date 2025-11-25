@@ -194,3 +194,7 @@
 .parallax {
   transition: transform 0.3s ease-out;
 }
+
+.animate-spin-slow {
+  animation: rotate 60s linear infinite;
+}
