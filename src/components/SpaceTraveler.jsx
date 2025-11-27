@@ -36,7 +36,7 @@ const SpaceTraveler = () => {
         // Trigger download after extraction animation
         setTimeout(() => {
             const link = document.createElement('a');
-            link.href = `${import.meta.env.BASE_URL}resume.pdf`;
+            link.href = `${import.meta.env.BASE_URL}resume.pdf?v=${new Date().getTime()}`;
             link.download = 'Ranidu_Pramod_CV.pdf';
             document.body.appendChild(link);
             link.click();

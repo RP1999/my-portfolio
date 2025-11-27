@@ -4,7 +4,7 @@ import ParticleBackground from './components/ParticleBackground';
 import ThemeToggle from './components/ThemeToggle';
 import LottieAnimation from './components/LottieAnimation';
 import SpaceTraveler from './components/SpaceTraveler';
-import { Github, Linkedin, Mail, Phone, MapPin, ChevronDown, ExternalLink, Code, Sparkles, Rocket, Zap, Star, Award, BookOpen } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MapPin, ChevronDown, ExternalLink, Code, Sparkles, Rocket, Zap, Star, Award, BookOpen, FileText } from 'lucide-react';
 import recipeImage from './assets/images/recipe-platform.png';
 import fruitImage from './assets/images/fruit-management.png';
 import appointmentImage from './assets/images/appointment-system.png';
@@ -299,6 +299,17 @@ export default function Portfolio() {
                 excel under pressure. My commitment to staying at the forefront of advancements drives
                 my goal to contribute meaningfully to the dynamic field of computer systems.
               </p>
+
+              <div className="mb-8">
+                <a
+                  href={`${import.meta.env.BASE_URL}resume.pdf?v=${new Date().getTime()}`}
+                  download="Ranidu_Pramod_CV.pdf"
+                  className="inline-flex items-center gap-2 bg-orange-500 text-black px-6 py-3 rounded-full font-bold hover:bg-orange-600 transition-all hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50"
+                >
+                  <FileText className="w-5 h-5" />
+                  Download CV
+                </a>
+              </div>
 
               <div className="mt-12">
                 <h3 className="text-3xl font-black text-orange-500 mb-6 flex items-center gap-2">
